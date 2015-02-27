@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/shakirah', as: 'rails_admin'
   resources :schools
 
   # The priority is based upon order of creation: first created -> highest priority.
