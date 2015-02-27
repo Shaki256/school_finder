@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :application_forms
+
   mount RailsAdmin::Engine => '/shakirah', as: 'rails_admin'
   resources :schools
 

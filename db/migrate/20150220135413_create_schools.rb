@@ -3,7 +3,7 @@ class CreateSchools < ActiveRecord::Migration
     create_table :schools do |t|
       t.string :name
       t.string :location
-      t.string :type
+      t.string :school_type
       t.string :level
       t.string :district
       t.string :contact

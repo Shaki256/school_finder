@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Application Forms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Surname</th>
+      <th>Othername</th>
+      <th>Gender</th>
+      <th>Dateofbirth</th>
+      <th>Religion</th>
+      <th>Occupation</th>
+      <th>Address</th>
+      <th>Telephone</th>
+      <th>Alive or not</th>
+      <th>Any physical defects</th>
+      <th>School background</th>
+      <th>Ple subject1</th>
+      <th>Ple subject2</th>
+      <th>Ple subject3</th>
+      <th>Ple subject4</th>
+      <th>Class applied</th>
+      <th>Former school</th>
+      <th>Reason for leaving</th>
+      <th>Cocurricular activity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @application_forms.each do |application_form| %>
+      <tr>
+        <td><%= application_form.surname %></td>
+        <td><%= application_form.othername %></td>
+        <td><%= application_form.gender %></td>
+        <td><%= application_form.dateofbirth %></td>
+        <td><%= application_form.religion %></td>
+        <td><%= application_form.occupation %></td>
+        <td><%= application_form.address %></td>
+        <td><%= application_form.telephone %></td>
+        <td><%= application_form.alive_or_not %></td>
+        <td><%= application_form.any_physical_defects %></td>
+        <td><%= application_form.school_background %></td>
+        <td><%= application_form.ple_subject1 %></td>
+        <td><%= application_form.ple_subject2 %></td>
+        <td><%= application_form.ple_subject3 %></td>
+        <td><%= application_form.ple_subject4 %></td>
+        <td><%= application_form.class_applied %></td>
+        <td><%= application_form.former_school %></td>
+        <td><%= application_form.reason_for_leaving %></td>
+        <td><%= application_form.cocurricular_activity %></td>
+        <td><%= link_to 'Show', application_form %></td>
+        <td><%= link_to 'Edit', edit_application_form_path(application_form) %></td>
+        <td><%= link_to 'Destroy', application_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Application form', new_application_form_path %>

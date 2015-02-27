@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  surname: MyString
+  othername: MyString
+  gender: MyString
+  dateofbirth: 2015-02-27
+  religion: MyString
+  occupation: MyString
+  address: MyString
+  telephone: MyString
+  alive_or_not: MyString
+  any_physical_defects: MyString
+  school_background: MyString
+  ple_subject1: MyString
+  ple_subject2: MyString
+  ple_subject3: MyString
+  ple_subject4: MyString
+  class_applied: MyString
+  former_school: MyString
+  reason_for_leaving: MyText
+  cocurricular_activity: MyText
+
+two:
+  surname: MyString
+  othername: MyString
+  gender: MyString
+  dateofbirth: 2015-02-27
+  religion: MyString
+  occupation: MyString
+  address: MyString
+  telephone: MyString
+  alive_or_not: MyString
+  any_physical_defects: MyString
+  school_background: MyString
+  ple_subject1: MyString
+  ple_subject2: MyString
+  ple_subject3: MyString
+  ple_subject4: MyString
+  class_applied: MyString
+  former_school: MyString
+  reason_for_leaving: MyText
+  cocurricular_activity: MyText

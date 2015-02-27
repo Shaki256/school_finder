@@ -4,7 +4,11 @@ class SchoolsController < ApplicationController
   # GET /schools
   # GET /schools.json
   def index
-    @schools = School.all
+    if params[:search]
+      @schools = School.search(params[:search])
+    else
+      @schools = School.all
+    end
   end
 
   # GET /schools/1
@@ -69,6 +73,6 @@ class SchoolsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def school_params
-      params.require(:school).permit(:name, :location, :type, :level, :district, :contact, :head_teacher_name, :school_info)
+      params.require(:school).permit(:name, :location, :school_type, :level, :district, :contact, :head_teacher_name, :school_info)
     end
 end
